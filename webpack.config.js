@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = (env) => {
     return {
         entry: './src/index.js',
-        mode: 'production',//env.dev === true ? 'development' :
+        mode: 'development',//env.dev === true ? 'development' :
         output: {
             filename: 'main.js',
             path: path.resolve(__dirname, 'dist')
@@ -29,10 +29,10 @@ module.exports = (env) => {
             ]
         },
         plugins: [
-            new HtmlWebpackPlugin(),
-            // {
-            //                 template: 'public/index.html'
-            //             }
+            new HtmlWebpackPlugin(
+            {
+                template: 'public/index.html'
+            }),
             // new ESLintPlugin({
             //     exclude: ['node_modules', 'dist'],
             //     context: path.resolve(__dirname, 'src')
