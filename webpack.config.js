@@ -53,7 +53,7 @@ module.exports = (env) => {
             historyApiFallback: {
                 index: 'index.html'
             },
-
+        },
         // module: {
         //     rules: [
         //         {
@@ -85,6 +85,6 @@ module.exports = (env) => {
         // },
 
         devtool: env.dev ? 'eval-source-map' : 'source-map',
-        }
+
     }
 }
