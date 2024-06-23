@@ -7,11 +7,12 @@ import ReactDOM from 'react-dom/client'
 const App = () => {
     return (
         <div>
-            <Layout>
-                <p>Hello from React !!!!</p>
-                <div>Test</div>
-                <Counter active={true} type="done" value={12} />
-            </Layout>
+            Hello from React !!!!
+            {/*<Layout>*/}
+            {/*    <p>Hello from React !!!!</p>*/}
+            {/*    <div>Test</div>*/}
+            {/*    <Counter active={true} type="done" value={12} />*/}
+            {/*</Layout>*/}
         </div>
     )
 }
