@@ -1,7 +1,7 @@
 // const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const ESLintPlugin = require('eslint-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 // const dotenv = require('dotenv')
 
 // const localEnv = dotenv.config().parsed
@@ -33,10 +33,10 @@ module.exports = (env) => {
             {
                 template: 'public/index.html'
             }),
-            // new ESLintPlugin({
-            //     exclude: ['node_modules', 'dist'],
-            //     context: path.resolve(__dirname, 'src')
-            // }),
+            new ESLintPlugin({
+                exclude: ['node_modules', 'dist'],
+                context: path.resolve(__dirname, 'src')
+            }),
             // new webpack.DefinePlugin({
             //     'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL),
             //     'process.env.MAP_KEY': localEnv.MAP_KEY
@@ -52,7 +52,7 @@ module.exports = (env) => {
             port: 3000,
             historyApiFallback: {
                 index: 'index.html'
-            }
+            },
 
         // module: {
         //     rules: [
@@ -84,7 +84,7 @@ module.exports = (env) => {
         //     ]
         // },
 
-        // devtool: env.dev ? 'eval-source-map' : 'source-map',
+        devtool: env.dev ? 'eval-source-map' : 'source-map',
         }
     }
 }
