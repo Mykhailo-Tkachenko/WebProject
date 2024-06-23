@@ -7,7 +7,9 @@
     "build": "webpack",
     "dev": "webpack serve",
     "lint:fix": "eslint --fix",
-    "lint": "eslint ./src/*"
+    "lint": "eslint ./src/*",
+    "prettier": "prettier --write --ignore-unknown ./src/*",
+    "prepare": "husky"
   },
   "author": "Mykhailo Tkachenko",
   "license": "ISC",
@@ -31,9 +33,24 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-webpack-plugin": "^4.2.0",
     "html-webpack-plugin": "^5.6.0",
+    "husky": "^9.0.11",
     "prettier": "^3.3.2",
     "webpack": "5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "npm run lint"
+    ],
+    "*.css": [
+      "npm run prettier"
+    ]
   }
 }
