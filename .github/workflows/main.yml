@@ -58,7 +58,7 @@ jobs:
           name: dist
           path: dist
 
-#  publish:
-#    needs: build
+  publish:
+    needs: build
 #    if: github.ref == 'refs/heads/main'
-#    uses: kse-web-development-practice/example/.github/workflows/github-pages.yml@main
+    uses: Mykhailo-Tkachenko/WebProject/.github/workflows/github-pages.yml@main
