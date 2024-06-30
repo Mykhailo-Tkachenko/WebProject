@@ -62,3 +62,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     uses: Mykhailo-Tkachenko/WebProject/.github/workflows/github-pages.yml@main
+    permissions:
+      pages: write
+      id-token: write
