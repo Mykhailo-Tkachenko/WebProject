@@ -34,7 +34,7 @@ jobs:
           key: ${{ runner.os }}-build-dependencies-${{ hashFiles('**/package-lock.json') }}
           path: |
             ./node_modules
-      - run: npm run lint
+      - run: BASE_URL=/${{ github.event.repository.name }} npm run lint
 
   build:
     runs-on: ubuntu-latest
