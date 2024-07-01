@@ -1,0 +1,17 @@
+.word-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.word-card .word {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.word-card .definition {
+  font-size: 18px;
+  color: #555;
+}

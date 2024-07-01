@@ -1,0 +1,11 @@
+.game-mode-selector {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game-mode-selector button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

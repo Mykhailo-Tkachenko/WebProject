@@ -1,0 +1,10 @@
+.game-mode-page {
+  padding: 20px;
+}
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
