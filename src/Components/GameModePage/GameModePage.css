@@ -4,7 +4,15 @@
 
 .word-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .word-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

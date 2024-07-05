@@ -1,3 +1,9 @@
 .topic-page {
   padding: 20px;
 }
+
+@media (min-width: 600px) {
+  .topic-page {
+    padding: 40px;
+  }
+}

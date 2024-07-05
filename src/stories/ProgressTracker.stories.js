@@ -10,5 +10,5 @@ const Template = (args) => <ProgressTracker {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  progress: 50 // приклад прогресу в процентах
+  progress: 50
 }

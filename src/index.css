@@ -1,6 +1,7 @@
 .app {
   font-family: Arial, sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 .app-header {
@@ -11,4 +12,18 @@
 
 main {
   padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .app {
+    padding: 20px;
+  }
+
+  .app-header {
+    padding: 30px;
+  }
+
+  main {
+    padding: 30px;
+  }
 }

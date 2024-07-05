@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import './LoginForm.css'
+import styles from './LoginForm.css'
 
 export const LoginForm = ({ onLogin }) => {
   const [email, setEmail] = useState('')
@@ -12,7 +12,7 @@ export const LoginForm = ({ onLogin }) => {
   }
 
   return (
-    <form className="login-form" onSubmit={handleSubmit}>
+    <form className={styles.loginForm} onSubmit={handleSubmit}>
       <div className="form-group">
         <label htmlFor="email">Email:</label>
         <input
@@ -33,7 +33,9 @@ export const LoginForm = ({ onLogin }) => {
           required
         />
       </div>
-      <button type="submit">Login</button>
+      <button className={styles.loginFormButton} type="submit">
+        Login
+      </button>
     </form>
   )
 }

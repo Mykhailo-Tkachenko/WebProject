@@ -14,3 +14,14 @@
   color: white;
   font-weight: bold;
 }
+
+@media (min-width: 600px) {
+  .progress-tracker {
+    margin-top: 30px;
+  }
+
+  .progress-bar {
+    height: 40px;
+    line-height: 40px;
+  }
+}

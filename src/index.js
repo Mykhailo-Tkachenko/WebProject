@@ -5,7 +5,7 @@ import { GameModePage } from './Components/GameModePage/GameModePage'
 import { TopicPage } from './Components/TopicPage/TopicPage'
 import { LoginForm } from './Components/LoginForm/LoginForm'
 import { ProgressTracker } from './Components/ProgressTracker/ProgressTracker'
-// import './index.css';
+import './App.css'
 
 const App = () => {
   const [mode, setMode] = useState(null)
