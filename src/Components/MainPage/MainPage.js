@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { GameModeSelector } from '../GameModeSelector/GameModeSelector'
-import './MainPage.css'
+import styles from './MainPage.css'
 
 export const MainPage = ({ onSelectMode }) => (
-  <div className="main-page">
+  <div className={styles.mainPage}>
     <h2>Виберіть режим гри</h2>
     <GameModeSelector onSelectMode={onSelectMode} />
   </div>

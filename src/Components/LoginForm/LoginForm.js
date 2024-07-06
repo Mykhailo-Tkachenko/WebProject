@@ -13,7 +13,7 @@ export const LoginForm = ({ onLogin }) => {
 
   return (
     <form className={styles.loginForm} onSubmit={handleSubmit}>
-      <div className="form-group">
+      <div className={styles.formGroup}>
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -23,7 +23,7 @@ export const LoginForm = ({ onLogin }) => {
           required
         />
       </div>
-      <div className="form-group">
+      <div className={styles.formGroup}>
         <label htmlFor="password">Password:</label>
         <input
           type="password"
@@ -33,9 +33,7 @@ export const LoginForm = ({ onLogin }) => {
           required
         />
       </div>
-      <button className={styles.loginFormButton} type="submit">
-        Login
-      </button>
+      <button type="submit">Login</button>
     </form>
   )
 }

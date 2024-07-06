@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { WordCard } from '../WordCard/WordCard'
-import './GameModePage.css'
+import styles from './GameModePage.css'
 
 export const GameModePage = ({ mode, words = [] }) => (
-  <div className="game-mode-page">
+  <div className={styles.gameModePage}>
     <h2>{mode === 'random' ? 'Випадкові слова' : 'Слова за темами'}</h2>
-    <div className="word-list">
+    <div className={styles.wordList}>
       {words.map((word, index) => (
         <WordCard key={index} word={word.word} definition={word.definition} />
       ))}

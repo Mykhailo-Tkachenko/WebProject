@@ -1,8 +1,8 @@
-.game-mode-page {
+.gameModePage {
   padding: 20px;
 }
 
-.word-list {
+.wordList {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 600px) {
-  .word-list {
+  .wordList {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

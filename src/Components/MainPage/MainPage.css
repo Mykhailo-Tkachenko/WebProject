@@ -1,9 +1,9 @@
-.main-page {
+.mainPage {
   padding: 20px;
 }
 
 @media (min-width: 600px) {
-  .main-page {
+  .mainPage {
     padding: 40px;
   }
 }
