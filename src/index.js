@@ -5,7 +5,7 @@ import { GameModePage } from './Components/GameModePage/GameModePage'
 import { TopicPage } from './Components/TopicPage/TopicPage'
 import { LoginForm } from './Components/LoginForm/LoginForm'
 import { ProgressTracker } from './Components/ProgressTracker/ProgressTracker'
-import './App.css'
+import './index.css'
 
 const App = () => {
   const [mode, setMode] = useState(null)
@@ -33,7 +33,7 @@ const App = () => {
         <h1>VocabHero</h1>
       </header>
 
-      <main>
+      <main className="app-main">
         {!loggedIn && <LoginForm onLogin={handleLogin} />}
 
         {loggedIn && !mode && <MainPage onSelectMode={handleSelectMode} />}
