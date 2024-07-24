@@ -1,5 +1,11 @@
-.game-mode-page {
+.topic-words-page {
   padding: 20px;
+}
+
+.topic-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .word-list {

@@ -4,29 +4,25 @@
   margin: 10px;
   border-radius: 8px;
   text-align: center;
+  cursor: pointer;
 }
 
-.word-card .word {
+.word {
   font-size: 24px;
   font-weight: bold;
 }
 
-.word-card .definition {
+.details {
+  margin-top: 10px;
+}
+
+.definition {
   font-size: 18px;
   color: #555;
 }
 
-@media (min-width: 600px) {
-  .word-card {
-    padding: 30px;
-    margin: 20px;
-  }
-
-  .word-card .word {
-    font-size: 28px;
-  }
-
-  .word-card .definition {
-    font-size: 20px;
-  }
+.translation {
+  font-size: 18px;
+  color: #555;
+  margin-top: 5px;
 }
