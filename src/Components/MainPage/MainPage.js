@@ -25,10 +25,16 @@ export const MainPage = ({
     navigate(`/topic/${topic}`)
   }
 
+  const handleLogoClick = () => {
+    navigate('/')
+  }
+
   return (
     <div className="app">
       <header className="app-header">
-        <h1>VocabHero</h1>
+        <h1 onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
+          VocabHero
+        </h1>
       </header>
 
       <main>
@@ -56,7 +62,8 @@ MainPage.propTypes = {
   words: PropTypes.arrayOf(
     PropTypes.shape({
       word: PropTypes.string.isRequired,
-      definition: PropTypes.string.isRequired
+      definition: PropTypes.string.isRequired,
+      translation: PropTypes.string.isRequired
     })
   ).isRequired,
   topics: PropTypes.arrayOf(PropTypes.string).isRequired,

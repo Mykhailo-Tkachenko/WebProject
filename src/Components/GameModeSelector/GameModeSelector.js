@@ -1,12 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useNavigate } from 'react-router-dom'
 
 export const GameModeSelector = ({ onSelectMode }) => {
+  const navigate = useNavigate()
+
+  const handleSelectMode = (mode) => {
+    onSelectMode(mode)
+    if (mode === 'test') {
+      navigate('/test')
+    }
+  }
+
   return (
     <div>
-      <button onClick={() => onSelectMode('learn')}>Навчання</button>
-      <button onClick={() => onSelectMode('test')}>Тест</button>
-      <button onClick={() => onSelectMode('topic')}>Теми</button>
+      <button onClick={() => handleSelectMode('learn')}>Навчання</button>
+      <button onClick={() => handleSelectMode('random')}>Випадкові слова</button>
+      <button onClick={() => handleSelectMode('topic')}>Теми</button>
+      <button onClick={() => handleSelectMode('test')}>Тест</button>
     </div>
   )
 }
@@ -14,3 +25,5 @@ export const GameModeSelector = ({ onSelectMode }) => {
 GameModeSelector.propTypes = {
   onSelectMode: PropTypes.func.isRequired
 }
+
+export default GameModeSelector

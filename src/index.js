@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { MainPage } from './Components/MainPage/MainPage'
 import TopicWordsPage from './Components/TopicWordsPage/TopicWordsPage'
+import TestPage from './Components/TestPage/TestPage'
 
 const App = () => {
   const [mode, setMode] = useState(null)
@@ -45,6 +46,10 @@ const App = () => {
     {
       path: '/topic/:topicName',
       element: <TopicWordsPage />
+    },
+    {
+      path: '/test',
+      element: <TestPage />
     }
   ])
 

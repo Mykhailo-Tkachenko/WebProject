@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { WordCard } from '../WordCard/WordCard'
-import wordsData from ''
+import wordsData from '../../words.json'
 import './TopicWordsPage.css'
 
 export const TopicWordsPage = () => {

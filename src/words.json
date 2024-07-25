@@ -1,17 +1,53 @@
 {
   "Animals": [
-    { "word": "Cat", "definition": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws.", "translation": "Кіт" },
-    { "word": "Dog", "definition": "A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, and a barking, howling, or whining voice.", "translation": "Собака" },
-    { "word": "Elephant", "definition": "A large herbivorous mammal with a trunk, long ears, and a thick skin.", "translation": "Слон" }
+    {
+      "word": "Cat",
+      "definition": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws.",
+      "translation": "Кіт"
+    },
+    {
+      "word": "Dog",
+      "definition": "A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, and a barking, howling, or whining voice.",
+      "translation": "Собака"
+    },
+    {
+      "word": "Elephant",
+      "definition": "A large herbivorous mammal with a trunk, long ears, and a thick skin.",
+      "translation": "Слон"
+    }
   ],
   "Food": [
-    { "word": "Apple", "definition": "The round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.", "translation": "Яблуко" },
-    { "word": "Bread", "definition": "Food made of flour, water, and yeast mixed together and baked.", "translation": "Хліб" },
-    { "word": "Carrot", "definition": "A tapering orange-colored root eaten as a vegetable.", "translation": "Морква" }
+    {
+      "word": "Apple",
+      "definition": "The round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.",
+      "translation": "Яблуко"
+    },
+    {
+      "word": "Bread",
+      "definition": "Food made of flour, water, and yeast mixed together and baked.",
+      "translation": "Хліб"
+    },
+    {
+      "word": "Carrot",
+      "definition": "A tapering orange-colored root eaten as a vegetable.",
+      "translation": "Морква"
+    }
   ],
   "Travel": [
-    { "word": "Airport", "definition": "A complex of runways and buildings for the takeoff, landing, and maintenance of civil aircraft, with facilities for passengers.", "translation": "Аеропорт" },
-    { "word": "Hotel", "definition": "An establishment providing accommodations, meals, and other services for travelers and tourists.", "translation": "Готель" },
-    { "word": "Map", "definition": "A diagrammatic representation of an area of land or sea showing physical features, cities, roads, etc.", "translation": "Карта" }
+    {
+      "word": "Airport",
+      "definition": "A complex of runways and buildings for the takeoff, landing, and maintenance of civil aircraft, with facilities for passengers.",
+      "translation": "Аеропорт"
+    },
+    {
+      "word": "Hotel",
+      "definition": "An establishment providing accommodations, meals, and other services for travelers and tourists.",
+      "translation": "Готель"
+    },
+    {
+      "word": "Map",
+      "definition": "A diagrammatic representation of an area of land or sea showing physical features, cities, roads, etc.",
+      "translation": "Карта"
+    }
   ]
 }

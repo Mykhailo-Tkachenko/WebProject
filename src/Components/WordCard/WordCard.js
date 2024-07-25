@@ -3,19 +3,23 @@ import PropTypes from 'prop-types'
 import './WordCard.css'
 
 export const WordCard = ({ word, definition, translation }) => {
-  const [showDefinition, setShowDefinition] = useState(false)
+  const [showDetails, setShowDetails] = useState(false)
 
-  const toggleDefinition = () => {
-    setShowDefinition(!showDefinition)
+  const toggleDetails = () => {
+    setShowDetails(!showDetails)
   }
 
   return (
-    <div className="word-card" onClick={toggleDefinition}>
+    <div className="word-card" onClick={toggleDetails}>
       <div className="word">{word}</div>
-      {showDefinition && (
+      {showDetails && (
         <div className="details">
-          <div className="definition">{definition}</div>
-          <div className="translation">{translation}</div>
+          <div className="definition">
+            <strong>Definition:</strong> {definition}
+          </div>
+          <div className="translation">
+            <strong>Translation:</strong> {translation}
+          </div>
         </div>
       )}
     </div>
