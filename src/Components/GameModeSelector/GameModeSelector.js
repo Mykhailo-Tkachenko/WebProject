@@ -14,8 +14,8 @@ export const GameModeSelector = ({ onSelectMode }) => {
 
   return (
     <div>
-      <button onClick={() => handleSelectMode('learn')}>Навчання</button>
-      <button onClick={() => handleSelectMode('random')}>Випадкові слова</button>
+      {/*<button onClick={() => handleSelectMode('learn')}>Навчання</button>*/}
+      {/*<button onClick={() => handleSelectMode('random')}>Випадкові слова</button>*/}
       <button onClick={() => handleSelectMode('topic')}>Теми</button>
       <button onClick={() => handleSelectMode('test')}>Тест</button>
     </div>
