@@ -71,4 +71,4 @@ MainPage.propTypes = {
   progress: PropTypes.number.isRequired
 }
 
-export default MainPage
+// export default MainPage
