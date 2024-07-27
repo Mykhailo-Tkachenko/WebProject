@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { MainPage } from './Components/MainPage/MainPage'
 import TopicWordsPage from './Components/TopicWordsPage/TopicWordsPage'
 import TestPage from './Components/TestPage/TestPage'
-import userClient from './clients/user/index'
+import userClient from './Clients/User/index'
 
 userClient.init('https://mapstorage-7e78.restdb.io', process.env.API_KEY, fetch)
 
