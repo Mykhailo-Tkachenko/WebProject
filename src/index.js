@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { MainPage } from './Components/MainPage/MainPage'
 import TopicWordsPage from './Components/TopicWordsPage/TopicWordsPage'
 import TestPage from './Components/TestPage/TestPage'
+import userClient from './clients/user'
+
+userClient.init('https://mapstorage-7e78.restdb.io', process.env.API_KEY, fetch)
 
 const App = () => {
   const [mode, setMode] = useState(null)
@@ -19,8 +22,15 @@ const App = () => {
     setWords(wordsData[selectedMode])
   }
 
-  const handleLogin = () => {
-    setLoggedIn(true)
+  const handleLogin = (login, pasword) => {
+    userClient.auth(login, pasword).then(() => {
+      // if (!user) {
+      //   setError('Used does not exist')
+      //   return
+      // }
+      // setError(null)
+      setLoggedIn(true)
+    })
   }
 
   const handleSelectTopic = (topic) => {

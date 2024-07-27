@@ -7,8 +7,9 @@ export const LoginForm = ({ onLogin }) => {
   const [password, setPassword] = useState('')
 
   const handleSubmit = (e) => {
+    onLogin(email, password)
+    e.stopPropagation()
     e.preventDefault()
-    onLogin({ email, password })
   }
 
   return (
@@ -16,7 +17,7 @@ export const LoginForm = ({ onLogin }) => {
       <div className={styles.formGroup}>
         <label htmlFor="email">Email:</label>
         <input
-          type="email"
+          type="text"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
