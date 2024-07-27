@@ -1,6 +1,6 @@
 describe('Learn Mode', () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit('http://localhost:3000/')
     cy.get('input[name="email"]').type('user@example.com')
     cy.get('input[name="password"]').type('password')
     cy.get('button').contains('Login').click()
