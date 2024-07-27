@@ -13,7 +13,9 @@
     "prettier": "prettier --write --ignore-unknown ./src/*",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cy": "cypress open"
+
   },
   "author": "",
   "license": "ISC",
