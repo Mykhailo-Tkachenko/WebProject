@@ -8,3 +8,14 @@
   justify-content: center;
   gap: 10px;
 }
+
+@media (max-width: 600px) {
+  .game-mode-page {
+    padding: 10px;
+  }
+
+  .word-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

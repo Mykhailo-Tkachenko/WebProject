@@ -9,3 +9,15 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .game-mode-selector {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .game-mode-selector button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
