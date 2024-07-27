@@ -7,12 +7,13 @@ describe('Learn Mode', () => {
   })
 
   it('should select learn mode and display words', () => {
-    cy.get('button').contains('Навчання').click()
-    cy.contains('Слова за темами').should('be.visible')
+    cy.get('button').contains('Теми').click()
+    cy.contains('Виберіть тему').should('be.visible')
   })
 
   it('should display word details on click', () => {
-    cy.get('button').contains('Навчання').click()
+    cy.get('button').contains('Теми').click()
+    cy.contains('Animals').click()
     cy.contains('Cat').click()
     cy.contains('Definition:').should('be.visible')
     cy.contains('Translation:').should('be.visible')

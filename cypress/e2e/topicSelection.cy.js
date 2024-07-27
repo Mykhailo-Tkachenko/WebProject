@@ -1,8 +1,8 @@
 describe('Topic Selection', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
-    cy.get('input[name="email"]').type('user@example.com')
-    cy.get('input[name="password"]').type('password')
+    cy.get('#email').type('user@example.com')
+    cy.get('#password').type('password')
     cy.get('button').contains('Login').click()
     cy.get('button').contains('Теми').click()
   })
